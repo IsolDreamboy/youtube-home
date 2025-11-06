@@ -1,0 +1,301 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
+
+body{
+  font-family: 'Roboto', Arial, sans-serif;
+  color: #0F0F0F;
+font-size: 14px;
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
+}
+
+.imagem-thumb{
+  width: 100%;
+}
+
+.imagem-canal{
+ width: 38px;
+
+}
+
+.caixa-textos{
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  text-decoration: none;
+}
+
+.caixa-titulo{
+  color: inherit;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.caixa-texto{
+  color: #606060;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.imagem-thumb{
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.imagem-canal{
+  border-radius: 50%;
+}
+
+.caixa-infos{
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.caixa-videos{
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  row-gap: 40px;
+  margin-bottom: 50px;
+}
+
+.caixa-video{
+  width: 380px;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  row-gap: 40px;
+}
+
+.caixa-video{
+  width: 32%;
+
+}
+
+
+
+.caixa-textos a{
+  color: #0F0F0F;
+}
+
+.caixa-texto a{
+
+  color: #606060;
+  text-decoration: none;
+  display: block;
+}
+
+
+.conteudo{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+
+.categorias{
+  display: flex;
+  gap: 8px;
+  margin-top: 15px;
+
+}
+
+
+.categoria{
+  font-size: 14px;
+  font-family: inherit;
+  border-radius: 10px;
+  background-color: #0000000d;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: #0f0f0f;
+  
+}
+
+.categoria:hover,
+.icone-microfone:hover
+{
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.categoria.selecionado{
+  background-color: #0F0F0F;
+  color: white;
+  font-weight: 600;
+
+}
+
+.principal{
+  display: flex;
+  padding: 10px 0;
+  gap: 40px;
+}
+
+
+.menu-lateral{
+  min-width: 240px;
+  gap: 30px;
+  font-size: 14px;
+
+}
+
+.menu-bloco {
+  border-bottom: 1.5px solid rgba(0, 0, 0, 0.1);
+  padding: 10px 15px;
+
+}
+
+.bloco-item{
+  display: flex;
+  border-radius: 12px; 
+  padding: 7.5px 15px;
+  align-items: center;
+  gap: 20px;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.2s ease;
+}
+
+.bloco-item.selecionado{
+
+  font-weight: 600;
+} 
+
+.bloco-item:hover,
+.bloco-item.selecionado{
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.bloco-item.selecionado:hover{
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.menu-bloco:last-child{
+  border-bottom: none;
+  
+}
+
+.bloco-titulo{
+  margin-left: 15px;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 3px;
+  color: #0F0F0F;
+}
+
+.menu-login{
+  padding: 16px 32px;
+}
+
+.login-texto{
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+
+.login-bloco{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  gap: 6px;
+  border-radius: 100px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 6px 12px;
+  color: #065fd4;
+  width: max-content;
+  transition: all 200ms ease ;
+}
+
+.login-bloco:hover{
+  background-color: #def1ff;
+  border: 1px solid #def1ff;
+}
+
+.bloco-texto{
+  color: inherit;
+  font-weight: 500;
+  width: 68px;
+  height: 33px;
+}
+
+.icone-usuario{
+  width: 24px;
+  height: 24px;
+  display: block;
+  cursor: pointer;
+}
+
+.cabecalho{
+  display: flex;
+  justify-content: space-between;
+  padding: 7.5px 15px;
+}
+
+.caixa-logo, .caixa-pesquisa, .caixa-login{
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.icone-logo{
+  height: 20px;
+  
+}
+
+.icone-menu{
+  height: 24px;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+  cursor: pointer;
+
+}
+
+.icone-menu:hover{
+  background-color: #e5e5e5;
+  
+}
+
+.input-pesquisa{
+  border-radius: 100px ;
+  border: rgba(0, 0, 0, 0.35);
+  height: 40px;
+  font-size: 16px;
+  padding: 0 20px;
+  width: 640px;
+  align-items: center;
+}
+
+.icone-menu, .icone-microfone{
+  cursor: pointer;
+
+}
+
+.icone-microfone{
+  width: 40px;
+  height: 40px;
+  padding: 7px;
+  background-color: #0000000d;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}
+
+.caixa-pesquisa{
+   margin-left: 32px;
+
+}
+
+.caixa-logo{
+  margin-left: 7px;
+  
+}
